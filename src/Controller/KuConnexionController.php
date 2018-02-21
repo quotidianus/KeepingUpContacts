@@ -1,21 +1,21 @@
 <?php
-// src/Controller/ContactsController.php
+// src/Controller/KuConnexionController.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ContactsController
+class KuConnexionController
 {
 /**
-* @Route("/contacts")
+* @Route("/")
 */
-    public function connexion()
+    public function kuconnexion()
     {
 	return new Response(
 	'<html><body>
-		K-U Contacts<br/>
-		<a href="../events">Events</a>
+		Page de connexion<br/>
+		<a href="/contacts">Se connecter</a>
 	</body></html>'
 	);
     }

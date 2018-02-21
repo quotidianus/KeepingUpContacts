@@ -1,21 +1,21 @@
 <?php
-// src/Controller/ConnexionController.php
+// src/Controller/KuEventsController.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ConnexionController
+class KuEventsController
 {
 /**
-* @Route("/")
+* @Route("/events")
 */
-    public function connexion()
+    public function kuevents()
     {
 	return new Response(
 	'<html><body>
-		Page de connexion<br/>
-		<a href="/contacts">Go</a>
+		K-U Events<br/>
+		<a href="../contacts">Contacts</a>
 	</body></html>'
 	);
     }
